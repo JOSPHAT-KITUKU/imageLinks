@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        h2{
+            color: #dd2476;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 15vh;
+            justify-content: flex-end;
+            align-items: center;
+            border-bottom: 2px solid transparent;
+            background-image: linear-gradient(to right, #ff512f, #dd2476, #6617cb);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            margin-bottom: 20px;
+        }
+        nav a{
+            margin: 30px;
+            font-style: normal;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+        nav a:hover{
+            border-radius: 16px;
+            background-color: rgb(143, 165, 176);
+            width: 100px;
+            text-align: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 100%;
+            background-image: repeating-linear-gradient(135deg, rgb(132, 135, 138));
+        }
+
+        .home_section{
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 2px dashed rgb(165, 109, 109);
+        }
+        .home_section h2, p{
+            align-self: flex-start;
+        }
+        .home_section a{
+            width: 100%;
+            height: fit-content;
+        }
+        .home_section img{
+            width: 100%;
+            height: 80vh;
+        }
+        .gallery_section{
+             border-top: 2px dashed rgb(165, 109, 109);
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .gallery{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .gallery a{
+            flex-basis: 32%;
+            height: 50vh;
+        }
+        .gallery img {
+            width: 100%;
+            height: 40vh;
+        }
+
+        .section h2 {
+            text-align: center;
+        }
+
+        .menu ul li {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the text and image */
+            margin-bottom: 20px; /* Add some space between menu items */
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu img {
+            width: 80%; /* Adjust the width of the image */
+            height: auto;
+            margin-top: 10px; /* Add space between text and image */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" >
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#foods">Foods</a>
+        </nav>
+        <!--Home Section-->
+        <div class="home_section" id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website! Explore the links below.</p>
+            <a href="https://www.example.com/technology"><img src="tech/tech.jpg" alt="Technology"></a>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gallery_section" id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <a href="https://www.pexels.com/photo/body-of-water-1462011/" target="_blank"><img src="nature/river_green.jpg" alt="Nature"></a>
+                <a href="https://www.pexels.com/photo/photo-of-trees-and-mountain-1324803" target="_blank"><img src="nature/mountain_green.jpg" alt="Nature"></a>
+                <a href="https://www.pexels.com/photo/full-moon-on-a-daybreak-884788/" target="_blank"><img src="nature/night.jpg" alt="Nature"></a>
+            </div>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="menu_section" id="foods">
+            <h2>Menu</h2>
+            <div class="menu">
+                <ol>
+                    <li><a href="https://www.pexels.com/search/pizza/" target="_blank">Pizza</a>
+                    </li>
+                    <li><a href="https://www.pexels.com/search/bread/" target="_blank">Bread</a>
+                    </li>
+                    <li><a href="https://www.pexels.com/search/cakes/">Cake</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
